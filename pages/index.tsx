@@ -269,7 +269,7 @@ const Home: NextPage = () => {
               >
             
                 <p className="text-pink-500 text-sm font-semibold animate-pulse">
-                  ✨ Không click vào "Không tham gia" được đâu chị em đừng thử bấm nha hehe! ✨
+                  {`✨ Không click vào "Không tham gia" được đâu chị em đừng thử bấm nha hehe! ✨`}
                 </p>
               </motion.div>
 
