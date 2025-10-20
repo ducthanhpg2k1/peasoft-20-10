@@ -1,0 +1,27 @@
+{
+  "name": "PeaSoft Vietnam - Lời Mời Sự Kiện 20-10",
+  "short_name": "PeaSoft 20-10",
+  "description": "Lời mời tham gia sự kiện chào mừng ngày phụ nữ Việt Nam 20-10",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdf2f8",
+  "theme_color": "#ec4899",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/PeaSoft Vietnam.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/PeaSoft Vietnam.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "social"],
+  "lang": "vi",
+  "dir": "ltr"
+}

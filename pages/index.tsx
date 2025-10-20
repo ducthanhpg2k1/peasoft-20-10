@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
+import Image from 'next/image'
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Heart, Calendar, MapPin, Clock, Users, Gift, Sparkles } from 'lucide-react'
+import SEOHead from '../components/SEOHead'
 
 const Home: NextPage = () => {
   const [showDetails, setShowDetails] = useState(false)
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
     title: "Chào Mừng Ngày Phụ Nữ Việt Nam 20-10",
     subtitle: "Cùng nhau tạo nên những khoảnh khắc đáng nhớ",
     date: "20/10/2025",
-    time: "11:30",
+    time: "13:30",
     location: "Văn phòng công ty",
     description: "Rất mong chị em dành ra thời gian tham gia chương trình đặc biệt này. Chúng ta sẽ có những hoạt động thú vị, phần quà hấp dẫn và những phút giây vui vẻ bên nhau!",
     activities: [
@@ -86,7 +87,7 @@ const Home: NextPage = () => {
 
   // Countdown timer
   useEffect(() => {
-    const targetDate = new Date('2025-10-20T11:30:00').getTime()
+    const targetDate = new Date('2025-10-20T13:30:00').getTime()
     
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -109,12 +110,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Lời Mời Tham Gia Sự Kiện 20-10</title>
-        <meta name="description" content="Mời tham gia sự kiện chào mừng ngày phụ nữ Việt Nam 20-10" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <SEOHead />
 
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
         {/* Background decorative elements */}
@@ -141,7 +137,7 @@ const Home: NextPage = () => {
                 transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
                 className="mb-8"
               >
-                <img 
+                 <img 
                   src={eventData.logoUrl} 
                   alt="Logo công ty" 
                   className="h-32 w-auto"
@@ -306,7 +302,7 @@ const Home: NextPage = () => {
             >
               <div className="max-w-4xl mx-auto">
                 {/* Back button */}
-                <motion.button
+                {/* <motion.button
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
@@ -314,7 +310,7 @@ const Home: NextPage = () => {
                   className="mb-8 bg-white/80 backdrop-blur-sm rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   ← Quay lại
-                </motion.button>
+                </motion.button> */}
 
                 {/* Main content */}
                 <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
